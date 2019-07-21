@@ -22,8 +22,11 @@ pipeline {
         { 
             steps {
                 echo "Deploy code goes here"                
-                sh deploy.sh 
-            }
+                  sh "docker build --tag=webapp-hello ."
+                  sh "docker "container run --name webapp-hello1 -p 11055:8080 webapp-hello"
+                  sh "docker tag webapp-hello diptendu001/test100:webapp-v1"
+                  sh "docker push diptendu001/test100:webapp-v1"
+                 }
         }
                
        }
