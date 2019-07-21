@@ -22,7 +22,7 @@ pipeline {
         { 
             steps {
                 echo "Deploy code goes here"                
-                sh "./deploy.sh" 
+                sh deploy.sh 
             }
         }
                
