@@ -1,4 +1,8 @@
 pipeline {
+    environment {
+        registry = docker.io
+        registryCredential = 'dips_docker_ID'
+             }
     agent any
     tools {
         maven 'mvn-3.6.3'
