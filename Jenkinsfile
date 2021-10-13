@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        registry = docker.io
+        registry = 'docker.io'
         registryCredential = 'dips_docker_ID'
              }
     agent any
