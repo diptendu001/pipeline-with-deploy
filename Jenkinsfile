@@ -17,7 +17,7 @@ pipeline {
               sh "mvn clean package"
                 }
          }
-         
+/*
         stage("DEPLOY")
         { 
             steps {
@@ -27,6 +27,8 @@ pipeline {
                  sh "docker push diptendu001/test100:webapp-v1"
                   }
         }
+ */
+    
                
        }
 }
