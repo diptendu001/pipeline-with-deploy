@@ -1,7 +1,8 @@
 pipeline {
     environment {
-        registry = 'docker.io'
+        registry = 'diptendu001/test100'
         registryCredential = 'dips_docker_ID'
+        dockerImage = ' '
              }
     agent any
     tools {
@@ -29,6 +30,8 @@ pipeline {
 //              sh "docker build --tag=webapp-hello ."
 //              sh "docker tag webapp-hello diptendu001/test100:webapp-v1"
 //              sh "docker push diptendu001/test100:webapp-v1"
+                sh "podman docker login -u diptendu001 -p PowerShell_L2"
+
                 sh "podman build -t docker.io/webapp-demo:v1 ."
 //              sh "podman -t docker.io/webapp-demo:v1 diptendu001/test100:webapp-demo-131021"
 //              sh "podman push docker.io/diptendu001/test100:webapp-demo-131021"
