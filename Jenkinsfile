@@ -27,12 +27,12 @@ pipeline {
         { 
             steps {
                 echo "Deploy code goes here"                
-//              sh "docker build --tag=webapp-hello ."
-//              sh "docker tag webapp-hello diptendu001/test100:webapp-v1"
-//              sh "docker push diptendu001/test100:webapp-v1"
-                sh "podman login -u diptendu001 -p PowerShell_L2"
+                sh "docker build --tag=webapp-hello ."
+                sh "docker tag webapp-hello diptendu001/test100:webapp-v1"
+                sh "docker push diptendu001/test100:webapp-v1"
+//                sh "podman login -u diptendu001 -p PowerShell_L2"
 
-                sh "podman build -t docker.io/webapp-demo:v1 ."
+//                sh "podman build -t docker.io/webapp-demo:v1 ."
 //              sh "podman -t docker.io/webapp-demo:v1 diptendu001/test100:webapp-demo-131021"
 //              sh "podman push docker.io/diptendu001/test100:webapp-demo-131021"
                   }
