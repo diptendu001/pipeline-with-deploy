@@ -1,7 +1,7 @@
 pipeline {
     environment {
         registry = 'diptendu001/test100'
-        registryCredential = 'dips_docker_ID'
+        registryCredential = 'dips-docker-ID'
         dockerImage = ' '
              }
     agent any
