@@ -6,7 +6,7 @@ pipeline {
              }
     agent any
     tools {
-        maven 'mvn-3.0.5'
+        maven 'mvn-3.6.3'
           }
     stages {
        stage("VERSION")
